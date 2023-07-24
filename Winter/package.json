@@ -1,0 +1,18 @@
+{
+  "name": "winter",
+  "version": "0.0.1",
+  "description": "winter is in the south",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "passport": "^0.6.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22"
+  }
+}

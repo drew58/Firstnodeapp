@@ -1,0 +1,14 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "\"this is an introduction to node app developement\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "utiva",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

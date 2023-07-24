@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+
+  form(action = "POST")
+    section.form-group 
+        label(for="title") Title: 
+        input#title.form-control(type="text", placeholder="Name of book" name="title" required= 'true') 
+
+   section.form.group  
+        label(for="author") Title: 
+        select#author.form-control(type="select" placeholder= "Select author" name="author" required="true") 
+          each book in books 
+             option(value =book.author) #{book.author}
+
+
+  section.form.group  
+        label(for="summary") Summary: 
+        input#summary.form-control(type="select" placeholder= "Summary" name="summary" required="true") 
+
+  section.form.group  
+        label(for="isbn") ISBN: 
+        input#isbn.form-control(type="select" placeholder= "ISBN" name="isbn" required="true") 
+
+
+  section .form-group  
+      label() Genre 
+      section  
+           each item in books 
+               section   
+                   input(type="checkbox", name = "genre") 
+                   label(for="genre") #{item.country}
